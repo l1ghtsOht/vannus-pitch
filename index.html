@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Vannus — GX Fellowship pitch package. The jurisdiction record for AI vendors: which legal entity controls each tool, under whose law.">
+  <title>Vannus Jurisdiction Record</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --paper:#F6F7F9; --card:#FFFFFF; --ink:#14181F; --ink-2:#3D4753; --ink-3:#6B7684;
+  --rule:#DDE1E7; --rule-2:#EAEDF1;
+  --seal:#7A2233; --seal-soft:rgba(122,34,51,.08);
+  --blank:#8A6A1F; --blank-soft:rgba(138,106,31,.10);
+  --shadow:0 1px 2px rgba(20,24,31,.05), 0 8px 24px -12px rgba(20,24,31,.12);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#101319; --card:#161A22; --ink:#E8EBEF; --ink-2:#B4BCC7; --ink-3:#7E8896;
+    --rule:#262C36; --rule-2:#1E232B;
+    --seal:#D98A9B; --seal-soft:rgba(217,138,155,.10);
+    --blank:#D6B76A; --blank-soft:rgba(214,183,106,.12);
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101319; --card:#161A22; --ink:#E8EBEF; --ink-2:#B4BCC7; --ink-3:#7E8896;
+  --rule:#262C36; --rule-2:#1E232B;
+  --seal:#D98A9B; --seal-soft:rgba(217,138,155,.10);
+  --blank:#D6B76A; --blank-soft:rgba(214,183,106,.12);
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px 96px}
+
+/* ── masthead ─────────────────────────────────────────── */
+.mast{padding:64px 0 34px; border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--seal); font-weight:700; margin:0 0 18px
+}
+h1{
+  font-family:Newsreader,Georgia,serif; font-weight:600;
+  font-size:clamp(2.1rem,5.2vw,3.15rem); line-height:1.06; letter-spacing:-.02em;
+  margin:0 0 16px; text-wrap:balance;
+}
+.dek{font-size:1.06rem; color:var(--ink-2); max-width:60ch; margin:0}
+.meta{
+  display:flex; flex-wrap:wrap; gap:8px 26px; margin-top:26px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:12.5px; color:var(--ink-3);
+}
+.meta b{color:var(--ink-2); font-weight:500}
+.meta a{color:var(--seal); text-decoration:none; border-bottom:1px solid var(--seal-soft)}
+.meta a:hover{border-bottom-color:var(--seal)}
+
+/* ── standfirst ───────────────────────────────────────── */
+.standfirst{
+  margin:34px 0 0; padding:22px 26px; background:var(--card);
+  border-left:3px solid var(--seal); border-radius:0 6px 6px 0; box-shadow:var(--shadow);
+}
+.standfirst p{margin:0; font-size:1.02rem; color:var(--ink-2)}
+.standfirst strong{color:var(--ink)}
+
+/* ── section groups ───────────────────────────────────── */
+.group{margin-top:64px}
+.group-label{
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--ink-3); padding-bottom:9px;
+  border-bottom:1px solid var(--rule); margin-bottom:8px;
+}
+
+/* ── question block: content + citation rail ──────────── */
+.q{
+  display:grid; grid-template-columns:1fr; gap:0;
+  padding:38px 0 6px; border-bottom:1px solid var(--rule-2);
+}
+@media (min-width:940px){
+  .q{grid-template-columns:minmax(0,1fr) 246px; gap:44px}
+}
+.qnum{
+  font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:500;
+  color:var(--seal); letter-spacing:.08em; margin:0 0 6px;
+}
+h2{
+  font-family:Newsreader,Georgia,serif; font-weight:600; font-size:1.72rem;
+  line-height:1.2; letter-spacing:-.015em; margin:0 0 18px; text-wrap:balance;
+}
+h3{
+  font-size:.94rem; font-weight:700; letter-spacing:.01em; margin:30px 0 10px; color:var(--ink);
+}
+.body p{margin:0 0 15px; max-width:66ch}
+.body strong{font-weight:700}
+.body em{font-style:italic; color:var(--ink-2)}
+
+/* citation rail */
+.rail{font-size:12.5px; line-height:1.5; color:var(--ink-3)}
+.rail > div{
+  padding:11px 0 11px 13px; border-left:2px solid var(--rule); margin-bottom:16px;
+}
+.rail b{
+  display:block; font-family:"IBM Plex Mono",monospace; font-size:10.5px;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--seal);
+  font-weight:700; margin-bottom:5px;
+}
+.rail a{color:var(--ink-2); word-break:break-word}
+@media (max-width:939px){
+  .rail{margin-top:22px; padding-top:18px; border-top:1px solid var(--rule)}
+}
+
+/* ── testimony ────────────────────────────────────────── */
+blockquote{
+  margin:22px 0; padding:20px 24px; background:var(--card);
+  border-left:3px solid var(--seal); border-radius:0 6px 6px 0; box-shadow:var(--shadow);
+}
+blockquote p{margin:0 0 8px; font-family:Newsreader,Georgia,serif; font-size:1.14rem; line-height:1.45}
+blockquote p:last-child{margin:0}
+blockquote .tr{font-family:"Public Sans",sans-serif; font-size:.94rem; font-style:italic; color:var(--ink-3)}
+
+/* ── tables ───────────────────────────────────────────── */
+.tw{overflow-x:auto; margin:20px 0; border:1px solid var(--rule); border-radius:7px; background:var(--card)}
+table{border-collapse:collapse; width:100%; font-size:14px; min-width:460px}
+th{
+  text-align:left; font-family:"IBM Plex Mono",monospace; font-size:10.5px;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); font-weight:500;
+  padding:11px 15px; border-bottom:1px solid var(--rule); white-space:nowrap;
+}
+td{padding:11px 15px; border-bottom:1px solid var(--rule-2); vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.n{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; white-space:nowrap}
+.big{font-family:"IBM Plex Mono",monospace; font-weight:500; color:var(--seal)}
+
+/* ── figure strip ─────────────────────────────────────── */
+.figs{display:grid; grid-template-columns:repeat(auto-fit,minmax(132px,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:7px; overflow:hidden; margin:22px 0}
+.fig{background:var(--card); padding:16px 15px}
+.fig .v{font-family:"IBM Plex Mono",monospace; font-size:1.5rem; font-weight:500; letter-spacing:-.02em; font-variant-numeric:tabular-nums; display:block}
+.fig .k{font-size:12px; color:var(--ink-3); margin-top:3px; display:block; line-height:1.35}
+.fig.seal .v{color:var(--seal)}
+.fig.blank .v{color:var(--blank)}
+
+/* ── zero callout ─────────────────────────────────────── */
+.zero{
+  margin:24px 0; padding:24px 26px; border:1px solid var(--blank);
+  background:var(--blank-soft); border-radius:7px;
+}
+.zero .h{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--blank); font-weight:500; margin:0 0 10px;
+}
+.zero p{margin:0 0 12px}
+.zero p:last-child{margin:0}
+
+.closer{
+  margin-top:60px; padding:30px 32px; background:var(--card);
+  border:1px solid var(--rule); border-top:3px solid var(--seal); border-radius:7px; box-shadow:var(--shadow);
+}
+.closer h2{margin-top:0}
+
+a{color:var(--seal)}
+:focus-visible{outline:2px solid var(--seal); outline-offset:3px; border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">GX Fellowship · Pitch Package</p>
+  <h1>Who legally controls your AI vendors?</h1>
+  <p class="dek">Vannus establishes which legal entity stands behind each AI vendor, under whose law — and therefore which government can compel the data it holds.</p>
+  <div class="meta">
+    <span><b>Company</b> Vannus · PRAXIS AI LLC (Missouri)</span>
+    <span><b>URL</b> <a href="https://vannus.co">vannus.co</a></span>
+    <span><b>Founder</b> Drake Schreiber · St. Louis, MO</span>
+    <span><b>Submitted</b> 30 Aug 2026</span>
+  </div>
+</header>
+
+<div class="standfirst">
+  <p><strong>Read question 7 first if you only read one.</strong> It says zero, and it says it before it says anything else. Everything in this document is either a regulator's own publication, the counterparty's own sworn testimony, or a record on our site you can falsify in thirty seconds against the vendor's live terms. <strong>Where I don't know something, it says so.</strong></p>
+</div>
+
+<!-- ══ INSIGHT ══ -->
+<section class="group">
+  <div class="group-label">Insight</div>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">01</p>
+      <h2>What is it?</h2>
+      <p><strong>Vannus is the jurisdiction record for AI vendors.</strong> For each AI tool a company uses, we establish four facts and cite every one of them:</p>
+      <p><strong>1.</strong> The <strong>contracting entity</strong> — the legal person you actually sign with, which is frequently not the brand on the website. <strong>2.</strong> That entity's <strong>country</strong> of incorporation. <strong>3.</strong> The <strong>governing law</strong> the agreement names. <strong>4.</strong> Therefore: <strong>which government can compel disclosure</strong> of the data that vendor holds.</p>
+      <p>Each determination quotes the vendor's own published terms, with a link to the source and the date it was checked. <strong>Where a vendor doesn't publish enough to establish a fact, the record says "not disclosed" instead of inferring it.</strong></p>
+      <p>The buyer is not shopping. <strong>They have been asked a question they cannot answer</strong> — by a customer's Data Processing Agreement, a security questionnaire, a Transfer Impact Assessment, an auditor, or since 2025 a DORA Register of Information. They search, they get a confident answer, and they write it into a document that carries legal weight.</p>
+      <div class="tw"><table>
+        <tr><td><strong>Free stack check</strong></td><td>Paste your tools. No account.</td></tr>
+        <tr><td class="big">$299</td><td>The dated, cited record</td></tr>
+        <tr><td class="big">from $1,500</td><td>Review — 20–40 vendors from your own list</td></tr>
+        <tr><td class="big">$7,500</td><td>Concierge — a person maps it onto your contracts</td></tr>
+      </table></div>
+    </div>
+    <aside class="rail">
+      <div><b>Live</b> <a href="https://vannus.co">vannus.co</a> — no credentials required</div>
+      <div><b>Coverage</b> 374 vendors catalogued · 94 with the contracting clause quoted verbatim</div>
+    </aside>
+  </article>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">02</p>
+      <h2>Who's the customer, and what do I know that others don't?</h2>
+      <p><strong>The customer</strong> is whoever owns the answer when the question arrives: a privacy or security lead, a compliance manager, a DPO, or at a smaller company the founder who inherited it. They are not buying software. <strong>They are buying the ability to answer, in writing, with a source.</strong></p>
+      <h3>Hosting location is not legal control — and the vendor's own lawyer said so under oath</h3>
+      <p>Anton Carniaux, <em>Directeur des affaires publiques et juridiques</em> at Microsoft France, appeared before the French Senate's commission of inquiry on <strong>Tuesday 10 June 2025</strong>. He was sworn — the president had him raise his right hand. Rapporteur Dany Wattebled asked whether he could guarantee that data of French citizens entrusted to Microsoft via UGAP would never be transmitted following a US government injunction without the explicit agreement of French authorities.</p>
+      <blockquote>
+        <p>“Non, je ne peux pas le garantir, mais, encore une fois, cela ne s'est encore jamais produit.”</p>
+        <p class="tr">“No, I cannot guarantee it — but, once again, it has never yet happened.”</p>
+      </blockquote>
+      <p><strong>I quote the second half deliberately, because it is the part that matters.</strong> The defence offered by the vendor's own counsel, under oath, is not that the data is protected. <strong>It is that nobody has asked yet.</strong> That is not a legal protection. It is a waiting period.</p>
+      <h3>Two cases that show why a search doesn't solve this</h3>
+      <p><strong>OpenAI splits by region twice, and the two splits are not the same split.</strong> Its business terms name <strong>OpenAI OpCo, LLC</strong> for customers <em>outside</em> the EEA or Switzerland and <strong>OpenAI Ireland Ltd</strong> for customers inside them. The governing-law clause names <strong>the laws of Ireland</strong> for customers in the EEA, Switzerland <strong>or the UK</strong> — and California for everyone else.</p>
+      <p><strong>The UK is in the second list and not the first.</strong> A UK company writing <em>“our AI subprocessor is OpenAI Ireland, governed by Irish law”</em> into a DPA is <strong>right about the law and wrong about the entity</strong> — and the entity is what determines whether a US government demand reaches the data.</p>
+      <p><strong>Microsoft 365 Copilot: a web search and a general AI assistant both answer confidently, and both answer from the wrong document.</strong> Ask either and you get <em>“you're contracting with Microsoft Corporation, One Microsoft Way, Redmond.”</em> That sentence is from the <strong>consumer</strong> Microsoft Services Agreement. It does not govern the business product.</p>
+      <p><strong>Vannus publishes no contracting entity for Microsoft 365 Copilot</strong> — no entity, no country, no governing law, on the page or in the API. The most recognisable vendor in the catalog, the one a reader is most likely to check first, and the field is empty because it could not be established from public documents. <strong>That refusal is the product.</strong> In a filing that goes to a regulator, a confident wrong answer is worse than a blank — and a general-purpose model will always produce the confident answer, because that is what it is for.</p>
+      <p><strong>What I do not yet know:</strong> I have not interviewed these buyers. See question 7. That is the honest gap in this application and I am not going to paper over it.</p>
+    </div>
+    <aside class="rail">
+      <div><b>Source</b> French Senate, compte rendu, commission d'enquête sur la commande publique, week of 9 June 2025. Witness sworn.</div>
+      <div><b>Verify</b> <a href="https://vannus.co/static/which-agreement.html">vannus.co/static/which-agreement.html</a> — four vendors, every clause quoted with its source and date</div>
+      <div><b>Check us</b> <a href="https://vannus.co/tool/chatgpt">vannus.co/tool/chatgpt</a></div>
+    </aside>
+  </article>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">03</p>
+      <h2>What's the white space?</h2>
+      <p><strong>Nobody publishes contracting-entity and governing-law records for AI vendors.</strong> I searched for an incumbent doing this and could not find one. <strong>I state that as a negative search result, not as “we have no competitors.”</strong></p>
+      <div class="tw"><table>
+        <thead><tr><th>Category</th><th>What they establish</th><th>The gap</th></tr></thead>
+        <tbody>
+        <tr><td><strong>TPRM / vendor risk</strong><br><span style="color:var(--ink-3)">Whistic, Panorays, Prevalent</span></td><td>Questionnaire responses, security posture</td><td>Ask the <em>vendor</em> to self-report. No contracting-entity field.</td></tr>
+        <tr><td><strong>Compliance automation</strong><br><span style="color:var(--ink-3)">Vanta, Drata, Sprinto</span></td><td>Your own controls, SOC 2 / ISO readiness</td><td>Points inward at you, not outward at your vendors' legal structure</td></tr>
+        <tr><td><strong>Privacy platforms</strong><br><span style="color:var(--ink-3)">OneTrust, TrustArc</span></td><td>Consent, DSARs, RoPA tooling</td><td>Give you the <em>form</em>. Do not source the facts that go in it.</td></tr>
+        <tr><td><strong>Subprocessor trackers</strong></td><td>That a subprocessor list changed</td><td>Track the list, not the legal entity behind each name</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Two barriers hold the space open</h3>
+      <p><strong>First, the work is unglamorous and manual.</strong> One record means finding which of a vendor's several agreements applies, locating the contracting clause, quoting it, linking the source, dating it — and often concluding you cannot establish it. It does not demo well and it cannot be scraped reliably, because the answer is frequently conditional on the buyer's region and purchase channel.</p>
+      <p><strong>Second, everyone else's incentive is to answer.</strong> A platform that returns “not disclosed” for a marquee vendor looks broken. For us it is the proof of method. <strong>That asymmetry is defensible precisely because it is commercially uncomfortable.</strong></p>
+      <p><strong>Honest counter:</strong> the inputs are public. OpenAI publishes its own entity split; the EU–US Data Privacy Framework list names certified US entities; Open Terms Archive versions vendor terms for free. <strong>A large incumbent could add a contracting-entity field.</strong> What they would also have to add is the willingness to publish blanks, and the corpus of already-checked determinations. The first is cultural; the second is time.</p>
+    </div>
+    <aside class="rail">
+      <div><b>Method note</b> The absence of an incumbent is a negative search result. It is not proof that none exists.</div>
+    </aside>
+  </article>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">04</p>
+      <h2>Why now, and how big?</h2>
+      <h3>Three forcing functions, all dated, none of them mine</h3>
+      <p><strong>DORA became applicable 17 January 2025.</strong> Article 28(3) requires every EU financial entity to maintain a <strong>Register of Information</strong> covering all ICT third-party contracts and to produce it to the competent authority on request. The machine-readable templates — including the provider's <strong>country of headquarters</strong> (mandatory for every provider), and for contracts supporting a critical or important function the <strong>country of provision, of data at rest, and of processing</strong> — are set by <strong>Implementing Regulation (EU) 2024/2956</strong> under Art. 28(9). The annual cycle and the 31 December reference date come from the ESAs' Joint Decision of November 2024. <strong>I separate these because Art. 28(3) alone does not contain the country fields, and the person I am selling to is exactly the person with it open.</strong></p>
+      <p><strong>The ESAs ran a voluntary dry run in 2024. 1,039 financial entities across 27 Member States submitted registers.</strong> 92 were rejected outright on integration checks. Of the <strong>947 that were analysed, 6.5% passed all 116 data-quality checks</strong> — about sixty registers. Half the remainder failed fewer than five checks, and the ESAs said they were confident the data would be of sufficient quality. <strong>I give the exact denominator because 6.5% is of 947, not of the 1,039 in the sentence before it</strong> — and because the softer reading is the true one: these institutions are not incapable. The fields are simply hard to source.</p>
+      <p><strong>EDPB Recommendations 01/2020</strong> (v2.0, adopted 18 June 2021) require the exporter to assess the <strong>law and practice of the importer's own country</strong> — specifically any law compelling that importer to disclose personal data to public authorities — and to document it (paras 30–35, 48). <strong>The EDPB never uses the word “extraterritorial.” It does not have to:</strong> once the test is the law binding the <em>entity</em>, hosting location has already stopped being the answer. The assessment is mandatory. <strong>There is no standard evidence source for it.</strong></p>
+      <p><strong>And the supply side is measured only by an interested party — I will label it that way rather than let you find out.</strong> DataGrail, a privacy software vendor, reviewed 2,400 business systems for its 2026 report and states that <strong>63.6% of AI vendors do not disclose subprocessors</strong> in their legal documentation. <strong>DataGrail publishes no methodology, so I use it as a direction, not as evidence.</strong> IAPP covered it in July 2026 but did not measure it independently. It is the only public measurement of this gap I have found.</p>
+      <h3>How big</h3>
+      <p><strong>I am not going to hand you a TAM.</strong> The third-party market sizes for this category come from research mills with no disclosed methodology, and I would not defend them under a follow-up question.</p>
+      <p><strong>The one figure I will stand behind: Gartner sizes worldwide AI governance platform spend at $492M in 2026, crossing $1B by 2030.</strong> That is a small market growing fast, and I would rather tell you that than quote a number I cannot source.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Bottom-up, from the regulator's own count</th><th>Figure</th></tr></thead>
+        <tbody>
+          <tr><td>Verified beachhead — entities that actually attempted a jurisdiction-bearing filing</td><td class="n"><strong>1,039</strong></td></tr>
+          <tr><td>At 10% attach, $1,500</td><td class="n">$156K/yr</td></tr>
+          <tr><td>At 10% attach, repriced $2,500</td><td class="n">$260K/yr</td></tr>
+          <tr><td>Recurrence</td><td class="n">Annual, by regulation</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>The 10% is an assumption, not evidence.</strong> The population is verified; the conversion is not. Second tier, flagged as an estimate: ISO 27001 has <strong>96,709 certified organisations</strong> running supplier reviews — a level, not a growth rate. <strong>I have no evidence about conversion into that tier yet.</strong></p>
+      <p><strong>So: this is a real business at $156–260K and it is not yet a demonstrated venture-scale one.</strong> That is the honest shape, and you would find it anyway.</p>
+    </div>
+    <aside class="rail">
+      <div><b>DORA</b> Reg. (EU) 2022/2554 Art. 28(3). Applicable 17 Jan 2025.</div>
+      <div><b>Dry run</b> ESAs 2024 summary report — 1,039 entities, 116 data-quality checks, 6.5% passed all.</div>
+      <div><b>EDPB</b> Recommendations 01/2020, final 18 June 2021.</div>
+      <div><b>Disclosure gap</b> DataGrail 2026 Privacy &amp; AI Trends, n=2,400 systems. Corroborated by IAPP, July 2026.</div>
+      <div><b>Market</b> Gartner, AI governance platform spend, Feb 2026.</div>
+    </aside>
+  </article>
+</section>
+
+<!-- ══ VISION ══ -->
+<section class="group">
+  <div class="group-label">Vision</div>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">05</p>
+      <h2>Show, don't tell</h2>
+      <p><strong>There is nothing to install and no credentials to request.</strong></p>
+      <p><strong>Thirty seconds:</strong> paste a list of AI tools into the free stack check at <a href="https://vannus.co">vannus.co</a>. No account, no email. You get, per tool, who controls it where that is established — and an explicit blank where it is not.</p>
+      <p><strong>Two minutes:</strong> open any vendor record, for example <a href="https://vannus.co/tool/chatgpt">vannus.co/tool/chatgpt</a>. Every determination carries the quote, the source link and the date. <strong>Click through to the vendor's own terms and check us.</strong> That is the whole design: falsifiable on the spot.</p>
+      <p><strong>The case that shows the method:</strong> <a href="https://vannus.co/static/which-agreement.html">which-agreement.html</a> walks four vendors — Anthropic, Microsoft Copilot, OpenAI, Zoom — where the document a search returns is not the document that binds you.</p>
+      <p><strong>For AI assistants:</strong> <a href="https://vannus.co/llms.txt">llms.txt</a>, and an MCP connector live today that answers <em>how</em> a contracting entity is established and what counts as evidence. <strong>Its own discovery document states that per-vendor record lookup is Stage 2 and not yet live</strong> — you can check that at <a href="https://vannus.co/mcp/v0">/mcp/v0</a> in one request. A connector that overstated itself would be the exact thing this company exists to fix.</p>
+      <div class="figs">
+        <div class="fig"><span class="v">374</span><span class="k">vendors catalogued</span></div>
+        <div class="fig seal"><span class="v">282</span><span class="k">US-origin (75.4%)</span></div>
+        <div class="fig seal"><span class="v">94</span><span class="k">contracting clause quoted verbatim, source resolves today</span></div>
+        <div class="fig blank"><span class="v">280</span><span class="k">no deep record yet</span></div>
+        <div class="fig"><span class="v">2,408</span><span class="k">automated tests</span></div>
+      </div>
+      <p style="font-size:13px;color:var(--ink-3);border-left:2px solid var(--rule);padding-left:13px"><strong>How 94 is derived, since the number moved.</strong> The evidence file holds 97 entries. Three are excluded rather than counted: one is stranded by a catalog name mismatch and renders on no page, one is quoted from a press release rather than a contracting clause, and one vendor has taken its source document down. <strong>94 both render and carry a source link that resolves today.</strong> The site said 97; it was wrong on its own axis and is being corrected.</p>
+
+      <p><strong>The 280 is why the 94 is believable.</strong> Built, live, in production — 66 routes, Stripe checkout wired and passing its automated tests. <strong>It has never completed a real purchase, because nobody has ever paid</strong> — seven arrivals with zero completions is as consistent with a broken checkout as with absent demand, and I cannot yet tell you which. <strong>Two people. No outside capital.</strong></p>
+    </div>
+    <aside class="rail">
+      <div><b>Try it</b> <a href="https://vannus.co">vannus.co</a> — free check, no signup</div>
+      <div><b>A record</b> <a href="https://vannus.co/tool/chatgpt">/tool/chatgpt</a></div>
+      <div><b>The method</b> <a href="https://vannus.co/static/which-agreement.html">/static/which-agreement.html</a></div>
+      <div><b>Machine-readable</b> <a href="https://vannus.co/llms.txt">/llms.txt</a></div>
+    </aside>
+  </article>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">06</p>
+      <h2>Desired future state</h2>
+      <p><strong>When someone is asked which entity controls their AI vendors and under whose law, there is a place to look</strong> — and the answer arrives quoted, dated, and with a blank where the vendor has not said.</p>
+      <h3>Horizon 1 — the record is complete and cited (12–18 months)</h3>
+      <p>All 374 catalogued vendors carry a contracting-entity determination or an explicit “not disclosed.” Today that is 94. Re-verified annually against the DORA reference date. <strong>Success:</strong> a compliance team's first move on this question is Vannus, and a meaningful number of them pay for the dated artifact.</p>
+      <h3>Horizon 2 — the record becomes the citation (2–4 years)</h3>
+      <p>A determination is quotable into a filing, and an assistant answering the question cites us <em>because</em> we publish blanks where others infer. <strong>Success:</strong> the record is referenced in filings and questionnaires we did not sell into.</p>
+      <h3>Horizon 3 — the blanks become the pressure</h3>
+      <p><strong>The most valuable output is the 280.</strong> A public, dated list of vendors who will not say which entity you contract with is a fact about those vendors. <strong>Success:</strong> a vendor publishes a clause because the blank cost them a deal.</p>
+      <p><strong>What I refuse to build:</strong> anything that scores or ranks vendors against each other, and anything monetised by a vendor. Both are architecturally walled off in the codebase, not promised in copy.</p>
+    </div>
+    <aside class="rail">
+      <div><b>Today</b> 94 of 374 determinations. Horizon 1 is the other 280.</div>
+    </aside>
+  </article>
+</section>
+
+<!-- ══ DEMAND ══ -->
+<section class="group">
+  <div class="group-label">Demand</div>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">07</p>
+      <h2>Where's the demand?</h2>
+      <div class="zero">
+        <p class="h">Stated before anything else</p>
+        <p><strong>Zero revenue. No customer has paid any amount, ever.</strong></p>
+        <p>Verified independently against two authorities that could have disagreed — Stripe (zero charges in any status) and the delivery database (zero delivered reports). <strong>Cross-checked deliberately, because one source can be wrong and a founder who only checks the flattering one finds out later.</strong></p>
+        <p><strong>And I will name the second gap before you find it: I have not run customer interviews.</strong> No named practitioners, no recorded calls, no referral partners. Your example application answers this question with twenty interviews and a paying pilot. <strong>I cannot match that today and I am not going to imply otherwise.</strong></p>
+      </div>
+      <h3>What I actually have: one weak signal and one hard date</h3>
+      <p><strong>The signal.</strong> Between 2 and 10 August 2026, <strong>seven people</strong> pasted a real email address and a real list of their AI tools, clicked buy on the $299 report, and reached Stripe's payment page. <strong>None paid.</strong> All seven arrived while the site was still selling a product I have since removed, so <strong>I do not present them as demand for what I sell today.</strong> Zero arrivals in the twenty days since. Organic search is eliminated as their source by arithmetic: seven arrivals in nine days against five organic clicks in twenty-eight.</p>
+      <p>I do not know who they were or where they came from. The traffic data that would have told me was destroyed by a bug in my own deploy pipeline, which I found and fixed on 29 August. <strong>That is a real failure and it cost me the only signal I had.</strong></p>
+      <p><strong>The date.</strong> Thresholds were signed on <strong>29 August 2026, before any data existed</strong>: <strong>≥50</strong> qualified leads proceed, <strong>25–49</strong> proceed with a recorded shortfall, <strong>under 25 stops the programme.</strong> The interpretation of each branch was fixed in advance, in writing, including what would make me stop. <strong>List-building runs this week. The count is read Monday 7 September.</strong></p>
+      <p><strong>I am not asking you to believe there is demand. I am telling you the date I find out, and that I wrote down what would make me quit before I could know the answer.</strong></p>
+    </div>
+    <aside class="rail">
+      <div><b>Revenue</b> $0. Two independent authorities, cross-checked.</div>
+      <div><b>Interviews run</b> None. Stated, not omitted.</div>
+      <div><b>Count reads</b> Monday 7 September 2026</div>
+      <div><b>Stop condition</b> Under 25 qualified leads — signed 29 Aug, before any data existed</div>
+    </aside>
+  </article>
+</section>
+
+<!-- ══ BUSINESS ══ -->
+<section class="group">
+  <div class="group-label">Business</div>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">08</p>
+      <h2>What are the economics?</h2>
+      <p><strong>Software margins on the record; founder time on the top tier. No customers yet, so every figure below is a cost structure, not a result.</strong></p>
+      <div class="tw"><table>
+        <thead><tr><th>Tier</th><th>Price</th><th>Direct cost</th><th>Contribution</th><th>Capacity</th></tr></thead>
+        <tbody>
+          <tr><td>Stack check</td><td class="n">$0</td><td>~$0, automated</td><td>—</td><td>Unlimited. The wedge.</td></tr>
+          <tr><td><strong>Jurisdiction Report</strong></td><td class="n">$299</td><td>Stripe ~$9</td><td class="n"><strong>~$290 (97%)</strong></td><td>Unlimited</td></tr>
+          <tr><td><strong>Stack Review</strong></td><td class="n">from $1,500</td><td>6–10 founder hours</td><td class="n">~$1,400 ≈ $175/h</td><td>~8–12/mo, one person</td></tr>
+          <tr><td><strong>Concierge audit</strong></td><td class="n">$7,500</td><td>25–40 founder hours</td><td class="n">~$7,000 ≈ $215/h</td><td><strong>2–3/mo. Hard ceiling.</strong></td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>The record is the fixed cost and it is already paid.</strong> A determination costs roughly 30–90 minutes of research once, then sells into every report naming that vendor. <strong>94 determinations exist. The marginal cost of the 95th sale of an existing determination is a Stripe fee.</strong></p>
+      <p><strong>CAC is unknown and I will not invent it.</strong> Zero paid acquisition, zero customers, so there is no payback figure. <strong>What I know instead is the denominator: five organic clicks a month.</strong> Distribution is the unsolved problem, not delivery.</p>
+      <p><strong>Burn:</strong> hosting, domains and tooling under <strong>$100/month</strong>. No salaries, no office. I have not raised and I have not spent anyone's money.</p>
+    </div>
+    <aside class="rail">
+      <div><b>Burn</b> under $100/month</div>
+      <div><b>Break-even</b> roughly one $299 report a month</div>
+      <div><b>CAC</b> unknown — no paid acquisition has ever run</div>
+    </aside>
+  </article>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">08b</p>
+      <h2>How does revenue compound?</h2>
+      <p><strong>Three levers, and only the first is structural rather than hopeful.</strong></p>
+      <h3>1. The corpus compounds and never depreciates to zero</h3>
+      <p>Every determination is researched once and sold indefinitely. At 94 records the catalog answers a fraction of any real stack; at 374 it answers most of one. <strong>Each added record raises the value of every report that would otherwise have contained a blank</strong> — the classic case where coverage <em>is</em> the product.</p>
+      <h3>2. The re-issue is imposed by a regulator, not invented by me</h3>
+      <p>DORA's register is filed annually against a <strong>31 December reference date</strong>. A record dated last year does not evidence this year's filing. <strong>That makes the natural repeat annual and externally scheduled</strong> — the difference between this and the subscription product I killed in June, where the recurrence was my idea and nobody wanted it.</p>
+      <p>I have pre-committed, in writing, not to build the recurring product until ten $299 reports have been delivered. <strong>Zero delivered. So I have not built it, and I will not.</strong></p>
+      <h3>3. Tier movement</h3>
+      <p>The record answers “where do we stand.” The review answers “is the answer we are about to file right.” The audit answers “what do we do about it.” <strong>They are sequential, not alternatives.</strong> I have no attach-rate evidence, so I am not modelling it.</p>
+    </div>
+    <aside class="rail">
+      <div><b>Structural</b> Research once, sell indefinitely.</div>
+      <div><b>Externally scheduled</b> DORA filing, 31 Dec reference date, annual.</div>
+      <div><b>Gated</b> No recurring product before ten paid deliveries. Currently zero.</div>
+    </aside>
+  </article>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">09</p>
+      <h2>What's the wedge, and how does the model resolve?</h2>
+      <p><strong>The wedge is the free stack check</strong> — no account, no email, thirty seconds — <strong>and the moment of conversion is the blank.</strong> You paste your stack, and next to two or three vendors it says <em>not disclosed</em>. That blank is the reason to buy: <strong>you now know there is a question you cannot answer, and it is in a document you are about to sign.</strong></p>
+      <p><strong>The paid wedge is the $299 report</strong>, purchasable online with no sales call, because the buyer is mid-task and will not book a demo to finish a questionnaire.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Stage</th><th>Trigger</th><th>Evidence I have</th></tr></thead>
+        <tbody>
+          <tr><td>Now → 7 Sep</td><td>The count, read against pre-committed thresholds</td><td><strong>The date. Nothing else.</strong></td></tr>
+          <tr><td>First revenue</td><td>~100 manual sends behind legal clearance</td><td>None yet</td></tr>
+          <tr><td>Ten deliveries</td><td>Unlocks the annual re-issue, per pre-commitment</td><td>None yet</td></tr>
+          <tr><td>DORA beachhead</td><td>1,039 entities, annual filing cycle, Q1</td><td>Population verified, conversion not</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>Break-even is low, and that matters more here than upside.</strong> At under $100/month of infrastructure and no salaries, <strong>this business breaks even on roughly one $299 report a month.</strong> It does not need to work at scale to keep existing — which is why the pre-commitment to stop is credible rather than theatrical. <strong>I am not running out of runway, so nothing forces me to reinterpret a bad number.</strong></p>
+      <p><strong>The honest resolution risk:</strong> the top tier is founder-bound at 2–3 audits a month and does not scale without hiring. <strong>If this becomes a services business it caps early.</strong> The version that does not cap is the record itself — sold many times, researched once — and that version needs distribution I do not yet have.</p>
+    </div>
+    <aside class="rail">
+      <div><b>Conversion moment</b> The blank next to a vendor in your own stack.</div>
+      <div><b>Risk, named</b> Top tier is founder-bound and caps early.</div>
+    </aside>
+  </article>
+</section>
+
+<!-- ══ TEAM ══ -->
+<section class="group">
+  <div class="group-label">Team</div>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">10</p>
+      <h2>Is this the business I was meant to build?</h2>
+      <p><strong>I have already made the expensive mistake this business is designed to avoid, and I built the machine that stops me making it again.</strong></p>
+      <p>In June I built <strong>Stack Watch</strong> — a recurring monitoring subscription. I built it before testing whether anyone wanted it. <strong>It got zero subscribers. I withdrew it.</strong></p>
+      <p>What came out of that is the thing I would actually bring to this fellowship.</p>
+      <p><strong>A signed pre-commitment.</strong> Before the current test could produce a number, I wrote down what each result would mean, including the one that stops the company. It exists because <em>“once results exist, every number acquires a story that makes it encouraging.”</em> It has caught me six separate times, each before a single message was sent.</p>
+      <p><strong>A doctrine ledger — 35 numbered lines, every one with a receipt naming what it cost.</strong> Not principles. Dated failures, with the commit that fixed them:</p>
+      <div class="tw"><table>
+        <tbody>
+          <tr><td><em>A canary is not a canary until you have watched it fail.</em></td><td>Three guards in three rounds reported passing while testing nothing.</td></tr>
+          <tr><td><em>A store that persists is not an instrument that records.</em></td><td>The traffic counter was fixed, verified, and still recording nothing — for a second reason hidden behind the first.</td></tr>
+          <tr><td><em>Before fixing an instrument, ask whether it can reach the number.</em></td><td>I spent a day repairing a counter feeding a threshold that, on this site's real traffic, could not be reached in 4.6 years. <strong>Nobody had done that arithmetic, including me.</strong></td></tr>
+          <tr><td><em>When the world describes you wrongly, read what you told it before you blame the world.</em></td><td>AI assistants were describing this company as a tool-grading service. They were not hallucinating — they were quoting my own metadata, on 374 pages, accurately.</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>Every one of those was found by something checking me, and every one is written where it costs me something to have written it.</strong></p>
+      <p><strong>Why this business specifically.</strong> It rewards the two things I am actually good at: building the machinery, and refusing to state what I cannot source. The product's differentiator is a willingness to publish blanks. <strong>That is a temperament before it is a feature</strong> — and it is the same temperament that produced the ledger above.</p>
+      <p><strong>Team:</strong> me, full-time and technical, plus one person on outreach with no technical access. <strong>What I am missing is not engineering.</strong></p>
+      <p><strong>I will not tell you I am relentless or that I move fast.</strong> I will tell you I have zero revenue, that I know it to two decimal places, that I know exactly what would make me stop, and that I wrote it down before I could know the answer. <strong>Most people applying at zero do not know they are at zero.</strong></p>
+    </div>
+    <aside class="rail">
+      <div><b>Prior failure</b> Stack Watch — built before tested, zero subscribers, withdrawn June 2026.</div>
+      <div><b>Ledger</b> 35 numbered lines, each with a dated receipt.</div>
+    </aside>
+  </article>
+
+  <article class="q">
+    <div class="body">
+      <p class="qnum">11</p>
+      <h2>Why build this with Gateway X?</h2>
+      <p><strong>Because my problem is distribution, and it is the only problem I have not been able to solve alone.</strong></p>
+      <p>I can build the record — 374 vendors, 66 routes, 2,408 tests, live payments, two people, no capital. <strong>Five organic clicks a month says I have not solved getting it in front of the person holding the questionnaire.</strong> Everything in this application that is weak is downstream of that one thing.</p>
+      <h3>Three specific asks</h3>
+      <p><strong>1. Jesse, on distribution to a compliance buyer.</strong> Ampush was performance marketing to consumers at scale. Mine is a small, identifiable, professionally networked audience who buy at a moment of external pressure. <strong>I want to be told where I am wrong about how to reach them</strong> — my current plan is 100 manual sends, and I am aware that is a starting point, not a channel.</p>
+      <p><strong>2. Pricing and packaging against the proof event.</strong> The $299 is a guess anchored on nothing. A single manual vendor due-diligence review is <strong>commonly quoted at $2,500–$3,500</strong> (aggregator figures, not survey data). I may be an order of magnitude under, and I would rather be corrected before the first sale than after the hundredth.</p>
+      <p><strong>3. The scale question, answered honestly by someone who has done it.</strong> Question 4 says $156–260K from the verified beachhead. I do not know whether this is a $2M business or a $20M one, and <strong>I would rather find out from an operator in twelve weeks than from the market in three years.</strong></p>
+      <h3>Why the fellowship specifically fits</h3>
+      <p><em>Seedstrapped, traction and profits, not funding rounds</em> is not a slogan I have to adopt — <strong>it is how this has been run from the start.</strong> Under $100/month of burn, no capital raised, a pre-commitment to stop rather than to raise, and a written refusal to build the recurring product before ten customers exist. <strong>The follow-on being revenue-gated rather than round-gated rewards exactly the behaviour I have already written down.</strong></p>
+      <p><strong>And I live in St. Louis.</strong> No relocation, no disruption, twelve weeks on the problem I actually have.</p>
+    </div>
+    <aside class="rail">
+      <div><b>The ask</b> Distribution to a compliance buyer.</div>
+      <div><b>Already aligned</b> Under $100/mo burn, no capital raised, written stop condition.</div>
+      <div><b>Location</b> St. Louis. Already here.</div>
+    </aside>
+  </article>
+</section>
+
+<div class="closer">
+  <h2>The standing bet</h2>
+  <p><strong>If the count on 7 September comes in under 25, my pre-commitment says stop and rethink before any send — and I will, whether or not I am in this cohort.</strong></p>
+  <p style="margin-bottom:0">I would rather tell you that now than have you discover in week four that I took the money and kept going.</p>
+</div>
+
+</div>
+
+</body>
+</html>
